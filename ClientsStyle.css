@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: epilogue;
+    src: url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+}
+
+.epilogue-r {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.epilogue-b {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 1);
+    height: 100vh;
+}
+
+#navigation {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(40, 40, 40, 0.16);
+}
+
+.nav-menu {
+    width: 480px;
+    height: 28px;
+    padding-top: 26px;
+    padding-right: 50px;
+    line-height: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu a {
+    color: rgba(45, 45, 45, 1);
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.logo {
+    padding-top: 25px;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(45, 45, 45, 1);
+}
+
+.active {
+    color: rgba(21, 118, 214, 1) !important;
+}
+
+.nav {
+    display: none;
+}
+
+.clients-section {
+    width: 100%;
+    height: 88vh;
+    padding: 100px, 100px, 150px, 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.clients-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 1080px;
+    height: 317px;
+}
+
+.card {
+    width: 315px;
+    height: 317px;
+    padding: 30px 50px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    border: 1.5px solid rgba(21, 118, 214, 1);
+}
+
+@media (max-width: 376px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+        padding-top: 28px;
+        padding-right: 50px;
+        line-height: 40px;
+    }
+
+    .nav img {
+        width: 25px;
+        height: 23px;
+    }
+
+    .clients-section {
+        width: 375px;
+        height: 1111px;
+    }
+
+    .clients-cards {
+        flex-direction: column;
+        width: 315px;
+        height: 1031px;   
+    }
+
+
+
+}
